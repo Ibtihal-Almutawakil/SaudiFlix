@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SaudiFlix - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">SaudiFlix</div>
+</div>
+
+<div class="login-box">
+    <h2>Login</h2>
+    <p style="font-size:13px; margin-bottom:10px;">
+        Enter any username and password to create your account.
+    </p>
+
+    <form onsubmit="handleLogin(event)">
+        <input type="text" id="username" placeholder="Choose a username" required>
+        <input type="password" id="password" placeholder="Choose a password" required>
+        <button type="submit">Login</button>
+        <div id="login-error" class="error"></div>
+    </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

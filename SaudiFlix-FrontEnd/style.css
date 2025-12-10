@@ -1,0 +1,217 @@
+/* General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0c10;
+    color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    background: #15171e;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #f9f9f9;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #ff4757;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4757;
+}
+
+/* Containers */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Login */
+.login-box {
+    background: #15171e;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 15px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #2f3542;
+    background: #1e2028;
+    color: #f9f9f9;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #ff4757;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login-box button:hover {
+    background: #ff6b81;
+}
+
+.error {
+    color: #ff6b81;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* Movies grid */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+}
+
+.movie-card {
+    background: #15171e;
+    border-radius: 10px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 180px;
+    background: #2f3542;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.movie-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.movie-meta {
+    font-size: 13px;
+    color: #a4b0be;
+    margin-bottom: 6px;
+}
+
+.movie-desc {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.rating-badge {
+    display: inline-block;
+    background: #ff4757;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.movie-card a.watch-link {
+    font-size: 13px;
+    color: #1e90ff;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.movie-card a.watch-link:hover {
+    text-decoration: underline;
+}
+
+.movie-card button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    background: #2ed573;
+    color: #0b0c10;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.movie-card button:hover {
+    background: #7bed9f;
+}
+
+/* Watchlist empty */
+.empty-text {
+    font-size: 14px;
+    color: #a4b0be;
+    margin-top: 10px;
+}
+
+/* Rating form */
+.rating-form {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.rating-form label {
+    margin-right: 5px;
+}
+
+.rating-form select {
+    padding: 3px 6px;
+    border-radius: 4px;
+    border: 1px solid #2f3542;
+    background: #1e2028;
+    color: #f9f9f9;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.rating-form button {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: none;
+    background: #ffa502;
+    color: #0b0c10;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.rating-form button:hover {
+    background: #ffbe76;
+}
+
+@media (max-width: 600px) {
+    .movies-grid {
+        grid-template-columns: 1fr;
+    }
+}

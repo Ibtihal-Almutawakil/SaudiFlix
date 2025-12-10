@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SaudiFlix - Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="renderMovies()">
+
+<div class="navbar">
+    <div class="logo">SaudiFlix</div>
+    <div>
+        <span style="font-size:13px; margin-right:10px;">
+            User: <span id="nav-username"></span>
+        </span>
+        <a href="movies.html">Movies</a>
+        <a href="watchlist.html">Watchlist</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</div>
+
+<div class="container">
+    <h2 style="margin-bottom:15px;">Movies</h2>
+    <div id="movies-container" class="movies-grid"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
